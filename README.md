@@ -1,1 +1,1 @@
-# DN-Backend-THAs
+# Devsnest take home assignments
