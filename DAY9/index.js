@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-
+const port =process.env.PORT || 5000
 // Some Inbuild MiddleWares
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
@@ -19,4 +19,4 @@ app.get("/file/:name", (req, res) => {
     res.sendFile(req.params.name)
 })
 
-app.listen(3000, () => console.log("Listening at http://localhost:3000"))
+app.listen(port, () => console.log("Listening at 5000"))
